@@ -45,7 +45,7 @@
 		<tbody>
 		<c:forEach var="sports" items="${sportsList}">
 			<tr>
-				<td>${sports.id} </td>
+				<td><a href="<c:url value='/ath/${sports.id}'/>">${sports.id}</a></td>
 				<td>${sports.name}</td>
 				<td>${sports.birthDate}</td>
 				<td>${sports.age}</td>

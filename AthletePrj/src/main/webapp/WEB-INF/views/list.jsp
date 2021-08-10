@@ -12,6 +12,10 @@
 <h1>Athletes List</h1> 
 <% if("admin".equals(name)){ %>
 	<a href="<c:url value='/ath/insert'/>">Insert new athlete information</a>
+	<a href="<c:url value='/logout'/>">logout</a>
+<%} %>
+<%if(!"admin".equals(name)){ %>
+<a href="<c:url value='/login'/>">login</a>
 <%} %>
 <a href="<c:url value='/search'/>">Search</a>
 <table border="1">

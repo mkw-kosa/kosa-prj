@@ -119,7 +119,7 @@ public class AthleteController {
 					if(dbPassword.equals(password)) {
 						//비밀번호 일치
 						session.setAttribute("name", name);
-							return "login";
+							return "redirect:/ath/list";
 					}else {
 						//비밀번호 불일치
 						model.addAttribute("message", "WRONG_PASSWORD");
